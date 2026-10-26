@@ -1,18 +1,16 @@
-<!Doctype html>
+  <!DOCTYPE html>
 <html lang="en">
-    
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"
-   content="width=device-width, initial-scale=1.0">
-   
-   <title>Strings Vibe | Discover your sound</title>
-   <link rel="stylesheet" href="vibe.css">
-     </head>
-     
-     
-     <body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Strings Vibe | Discover Your Sound</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
 
     <header>
         <h1>Strings Vibe</h1>
@@ -23,20 +21,99 @@
             <a href="#artists">Artists</a>
             <a href="#genres">Genres</a>
         </nav>
-
     </header>
-    
-    <section id="home">
-        <h2>Discover Your Next Favourite Sound</h2>
-        <p>Explore new music, discover talented artists, and find your vibe.</p>
-</section>
 
-<form id="search-form">
-  <input type="text" id="music-search" placeholder="Search songs or artists...">
-    <button type="submit">Search</button>
-</form>
+    <main>
 
-<script src="vibe.js"></script>
+        <section id="home" class="hero">
+            <p class="welcome">WELCOME TO STRINGS VIBE</p>
+
+            <h2>Discover Your Next Favourite Sound</h2>
+
+            <p class="hero-text">
+                Explore new music, discover talented artists,
+                and find your vibe.
+            </p>
+
+            <form id="search-form">
+                <input
+                    type="text"
+                    id="music-search"
+                    placeholder="Search songs or artists..."
+                >
+
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <section id="music" class="content-section">
+            <h2>Featured Music</h2>
+            <p class="section-description">
+                Discover sounds for your mood.
+            </p>
+
+            <div class="music-grid">
+
+                <article class="music-card">
+                    <div class="music-art art-one">🎵</div>
+                    <h3>Midnight Dreams</h3>
+                    <p>Luna Ray</p>
+                    <span>Afrobeats</span>
+                </article>
+
+                <article class="music-card">
+                    <div class="music-art art-two">🎧</div>
+                    <h3>Feel the Rhythm</h3>
+                    <p>Jay Melody</p>
+                    <span>Pop</span>
+                </article>
+
+                <article class="music-card">
+                    <div class="music-art art-three">🎤</div>
+                    <h3>Golden Moments</h3>
+                    <p>Nova King</p>
+                    <span>R&amp;B</span>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="artists" class="content-section">
+            <h2>Discover Artists</h2>
+            <p class="section-description">
+                Meet artists and explore their sounds.
+            </p>
+
+            <div class="artist-list">
+                <div class="artist-item">🎙️ Luna Ray</div>
+                <div class="artist-item">🎤 Jay Melody</div>
+                <div class="artist-item">🎵 Nova King</div>
+            </div>
+        </section>
+
+        <section id="genres" class="content-section">
+            <h2>Explore Genres</h2>
+            <p class="section-description">
+                Find music that matches your vibe.
+            </p>
+
+            <div class="genre-list">
+                <span>Afrobeats</span>
+                <span>Hip-Hop</span>
+                <span>R&amp;B</span>
+                <span>Gospel</span>
+                <span>Pop</span>
+                <span>Jazz</span>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Strings Vibe. All rights reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
 
 </body>
-</html>
+</html>       
