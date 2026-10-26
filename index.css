@@ -1,7 +1,537 @@
-body {
-    background-color: #0b0b0f;
-    color: white;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+/* GENERAL WEBSITE STYLE */  
+  
+* {  
+    box-sizing: border-box;  
+}  
+  
+html {  
+    scroll-behavior: smooth;  
+}  
+  
+body {  
+    background-color: #0b0b0f;  
+    color: white;  
+    font-family: Arial, sans-serif;  
+    margin: 0;  
+    padding: 0;  
+}  
+  
+  
+/* HEADER AND NAVIGATION */  
+  
+header {  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+    padding: 20px 8%;  
+    background-color: #111116;  
+    border-bottom: 1px solid #262630;  
+}  
+  
+header h1 {  
+    color: #a855f7;  
+    font-size: 28px;  
+    margin: 0;  
+}  
+  
+nav {  
+    display: flex;  
+    gap: 22px;  
+}  
+  
+nav a {  
+    color: white;  
+    text-decoration: none;  
+    font-size: 15px;  
+    transition: color 0.3s;  
+}  
+  
+nav a:hover {  
+    color: #a855f7;  
+}  
+  
+  
+/* HOME SECTION */  
+  
+.hero {  
+    text-align: center;  
+    padding: 100px 20px;  
+    background: linear-gradient(  
+        135deg,  
+        #0b0b0f,  
+        #20102f,  
+        #0b0b0f  
+    );  
+}  
+  
+.welcome {  
+    color: #c084fc;  
+    font-size: 13px;  
+    letter-spacing: 3px;  
+}  
+  
+.hero h2 {  
+    font-size: 44px;  
+    max-width: 750px;  
+    margin: 20px auto;  
+}  
+  
+.hero-text {  
+    color: #b8b8c2;  
+    font-size: 17px;  
+    line-height: 1.7;  
+    max-width: 550px;  
+    margin: 0 auto 30px;  
+}  
+  
+  
+/* SEARCH FORM */  
+  
+#search-form {  
+    display: flex;  
+    gap: 10px;  
+    max-width: 500px;  
+    margin: 0 auto;  
+}  
+  
+#music-search {  
+    flex: 1;  
+    min-width: 0;  
+    padding: 15px;  
+    border: 1px solid #393344;  
+    border-radius: 8px;  
+    background-color: #17171f;  
+    color: white;  
+    font-size: 16px;  
+}  
+  
+#music-search:focus {  
+    outline: 2px solid #a855f7;  
+}  
+  
+#search-form button {  
+    padding: 15px 25px;  
+    border: none;  
+    border-radius: 8px;  
+    background-color: #a855f7;  
+    color: white;  
+    font-size: 16px;  
+    cursor: pointer;  
+    transition: background-color 0.3s;  
+}  
+  
+#search-form button:hover {  
+    background-color: #9333ea;  
+}  
+  
+  
+/* GENERAL CONTENT SECTIONS */  
+  
+.content-section {  
+    padding: 65px 8%;  
+}  
+  
+.content-section h2 {  
+    font-size: 30px;  
+    margin-bottom: 10px;  
+}  
+  
+.section-description {  
+    color: #aaaab8;  
+    margin-bottom: 30px;  
+}  
+  
+  
+/* MUSIC CARDS */  
+  
+.music-grid {  
+    display: grid;  
+    grid-template-columns: repeat(3, minmax(0, 1fr));  
+    gap: 22px;  
+}  
+  
+.music-card {  
+    background-color: #15151d;  
+    padding: 18px;  
+    border: 1px solid #292936;  
+    border-radius: 14px;  
+    transition: transform 0.3s, border-color 0.3s;  
+}  
+  
+.music-card:hover {  
+    transform: translateY(-5px);  
+    border-color: #a855f7;  
+}  
+  
+.music-art {  
+    height: 150px;  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    border-radius: 10px;  
+    font-size: 55px;  
+    margin-bottom: 18px;  
+}  
+  
+.art-one {  
+    background: linear-gradient(135deg, #512080, #b44b9b);  
+}  
+  
+.art-two {  
+    background: linear-gradient(135deg, #173b70, #7252b7);  
+}  
+  
+.art-three {  
+    background: linear-gradient(135deg, #9a4c21, #cf8a43);  
+}  
+  
+.music-card h3 {  
+    margin-bottom: 8px;  
+}  
+  
+.music-card p {  
+    color: #b8b8c2;  
+}  
+  
+.music-card span {  
+    display: inline-block;  
+    color: #d8b4fe;  
+    background-color: #2b193d;  
+    padding: 6px 10px;  
+    border-radius: 20px;  
+    font-size: 12px;  
+}  
+  
+  
+/* ARTISTS SECTION */  
+  
+.artist-list {  
+    display: flex;  
+    flex-wrap: wrap;  
+    gap: 15px;  
+}  
+  
+.artist-item {  
+    background-color: #17171f;  
+    border: 1px solid #292936;  
+    padding: 18px 22px;  
+    border-radius: 10px;  
+}  
+  
+  
+/* MUSIC GENRES */  
+  
+.genre-list {  
+    display: flex;  
+    flex-wrap: wrap;  
+    gap: 12px;  
+}  
+  
+.genre-list span {  
+    background-color: #251532;  
+    color: #e9d5ff;  
+    border: 1px solid #61368b;  
+    padding: 12px 20px;  
+    border-radius: 25px;  
+    transition: background-color 0.3s;  
+}  
+  
+.genre-list span:hover {  
+    background-color: #6b21a8;  
+}  
+  
+  
+/* FOOTER */  
+  
+footer {  
+    text-align: center;  
+    padding: 25px 15px;  
+    background-color: #111116;  
+    border-top: 1px solid #262630;  
+    color: #aaaab8;  
+}  
+
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 18px;
+        padding: 20px 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 70px 18px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .hero-text {
+        font-size: 15px;
+    }
+
+    #search-form {
+        flex-direction: column;
+    }
+
+    #search-form button {
+        width: 100%;
+    }
+
+    .content-section {
+        
+        #0b0b0f
+    );
 }
+
+.welcome {
+    color: #c084fc;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+.hero h2 {
+    font-size: 44px;
+    max-width: 750px;
+    margin: 20px auto;
+}
+
+.hero-text {
+    color: #b8b8c2;
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 550px;
+    margin: 0 auto 30px;
+}
+
+
+/* SEARCH FORM */
+
+#search-form {
+    display: flex;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#music-search {
+    flex: 1;
+    min-width: 0;
+    padding: 15px;
+    border: 1px solid #393344;
+    border-radius: 8px;
+    background-color: #17171f;
+    color: white;
+    font-size: 16px;
+}
+
+#music-search:focus {
+    outline: 2px solid #a855f7;
+}
+
+#search-form button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    background-color: #a855f7;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#search-form button:hover {
+    background-color: #9333ea;
+}
+
+
+/* GENERAL CONTENT SECTIONS */
+
+.content-section {
+    padding: 65px 8%;
+}
+
+.content-section h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    color: #aaaab8;
+    margin-bottom: 30px;
+}
+
+
+/* MUSIC CARDS */
+
+.music-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.music-card {
+    background-color: #15151d;
+    padding: 18px;
+    border: 1px solid #292936;
+    border-radius: 14px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.music-card:hover {
+    transform: translateY(-5px);
+    border-color: #a855f7;
+}
+
+.music-art {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 55px;
+    margin-bottom: 18px;
+}
+
+.art-one {
+    background: linear-gradient(135deg, #512080, #b44b9b);
+}
+
+.art-two {
+    background: linear-gradient(135deg, #173b70, #7252b7);
+}
+
+.art-three {
+    background: linear-gradient(135deg, #9a4c21, #cf8a43);
+}
+
+.music-card h3 {
+    margin-bottom: 8px;
+}
+
+.music-card p {
+    color: #b8b8c2;
+}
+
+.music-card span {
+    display: inline-block;
+    color: #d8b4fe;
+    background-color: #2b193d;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+
+/* ARTISTS SECTION */
+
+.artist-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.artist-item {
+    background-color: #17171f;
+    border: 1px solid #292936;
+    padding: 18px 22px;
+    border-radius: 10px;
+}
+
+
+/* MUSIC GENRES */
+
+.genre-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.genre-list span {
+    background-color: #251532;
+    color: #e9d5ff;
+    border: 1px solid #61368b;
+    padding: 12px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.genre-list span:hover {
+    background-color: #6b21a8;
+}
+
+
+/* FOOTER */  
+  
+footer {  
+    text-align: center;  
+    padding: 25px 15px;  
+    background-color: #111116;  
+    border-top: 1px solid #262630;  
+    color: #aaaab8;  
+}  
+  
+  
+/* MOBILE RESPONSIVENESS */  
+  
+@media (max-width: 700px) {  
+  
+    header {  
+        flex-direction: column;  
+        gap: 18px;  
+        padding: 20px 15px;  
+    }  
+  
+    nav {  
+        flex-wrap: wrap;  
+        justify-content: center;  
+        gap: 15px;  
+    }  
+  
+    .hero {  
+        padding: 70px 18px;  
+    }  
+  
+    .hero h2 {  
+        font-size: 32px;  
+    }  
+  
+    .hero-text {  
+        font-size: 15px;  
+    }  
+  
+    #search-form {  
+        flex-direction: column;  
+    }  
+  
+    #search-form button {  
+        width: 100%;  
+    }  
+  
+    .content-section {  
+        padding: 45px 18px;  
+    }  
+  
+    .music-grid {  
+        grid-template-columns: 1fr;  
+    }  
+  
+    .music-art {  
+        height: 180px;  
+    }  
+  
+    .content-section h2 {  
+        font-size: 26px;  
+    }  
+}  
+  
